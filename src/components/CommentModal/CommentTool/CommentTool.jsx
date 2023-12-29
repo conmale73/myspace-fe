@@ -104,7 +104,7 @@ const CommentTool = (props) => {
     };
     return (
         <>
-            <div className="relative x1n2onr6 x1ja2u2z x9f619 x78zum5 xdt5ytf x2lah0s x193iq5w x1xmf6yo x1e56ztr">
+            <div className="relative z-0 box-border flex flex-col flex-shrink-0 max-w-[100%] mt-[8px] mb-[8px]">
                 {isEmojiPickerVisible && (
                     <div
                         ref={emojiPickerRef}
@@ -122,11 +122,11 @@ const CommentTool = (props) => {
                         />
                     </div>
                 )}
-                <div className="x9f619 x1n2onr6 x1ja2u2z x78zum5 xdt5ytf x1iyjqo2 x2lwn1j">
-                    <div className="x9f619 x1n2onr6 x1ja2u2z x78zum5 xdt5ytf x2lah0s x193iq5w x1swvt13 x1pi30zi">
+                <div className="box-border relative z-0 flex flex-col flex-grow min-h-[0]">
+                    <div className="box-border relative z-0 flex flex-col flex-shrink-0 max-w-[100%] pl-[16px] pr-[16px]">
                         <div className="">
-                            <div className="x78zum5 x1q0g3np x1a2a7pz">
-                                <div className="xqcrz7y x14yjl9h xudhj91 x18nykt9 xww2gxu x1lliihq x1w0mnb xr9ek0c x1n2onr6">
+                            <div className="flex flex-row outline-none">
+                                <div className="self-start rounded-tl-[50%] rounded-tr-[50%] rounded-br-[50%] rounded-bl-[50%] block mr-[6px] mt-[2px] relative">
                                     <UserInfoPreview
                                         thumbnailHeight="40px"
                                         thumbnailWidth="40px"
@@ -136,18 +136,18 @@ const CommentTool = (props) => {
                                         displayOnlineStatus={false}
                                     />
                                 </div>
-                                <div className="x1r8uery x1iyjqo2 x6ikm8r x10wlt62 x4uap5">
+                                <div className="basis-0 flex-grow overflow-x-hidden overflow-y-hidden pr-0">
                                     <form
-                                        className="x1ed109x x1n2onr6 xmjcpbm x1tlxs6b x1g8br2z x1gn5b1j x230xth x972fbf xcfux6l x1qhh985 xm0m39n x78zum5 x1iyjqo2 x13a6bvl"
+                                        className="cursor-text relative xmjcpbm x1tlxs6b x1g8br2z x1gn5b1j x230xth x972fbf xcfux6l x1qhh985 xm0m39n flex flex-grow x13a6bvl"
                                         role="presentation"
                                     >
                                         <div className="xh8yej3">
-                                            <div className="x78zum5 x13a6bvl">
+                                            <div className="flex x13a6bvl">
                                                 <div
-                                                    className="xi81zsa xo1l8bm xlyipyv xuxw1ft x49crj4 x1ed109x xdl72j9 x1iyjqo2 xs83m0k x6prxxf x6ikm8r x10wlt62 x1y1aw1k xn6708d xwib8y2 x1ye3gou"
+                                                    className="xi81zsa xo1l8bm xlyipyv xuxw1ft x49crj4 cursor-text xdl72j9 flex-grow xs83m0k x6prxxf overflow-x-hidden overflow-y-hidden x1y1aw1k xn6708d xwib8y2 x1ye3gou"
                                                     data-visualcompletion="ignore"
                                                 >
-                                                    <div className="x1n2onr6">
+                                                    <div className="relative">
                                                         <TextareaAutosize
                                                             value={props.text}
                                                             ref={inputRef}
@@ -174,7 +174,7 @@ const CommentTool = (props) => {
 
                                                         {!typing ? (
                                                             <div
-                                                                className="ml-[2px] mt-[3px] xi81zsa x6ikm8r x10wlt62 x47corl x10l6tqk x17qophe xlyipyv x13vifvy x87ps6o xuxw1ft xh8yej3"
+                                                                className="ml-[2px] mt-[3px] xi81zsa overflow-x-hidden overflow-y-hidden x47corl x10l6tqk x17qophe xlyipyv x13vifvy x87ps6o xuxw1ft xh8yej3"
                                                                 style={{
                                                                     fontSize:
                                                                         18 +
@@ -190,15 +190,15 @@ const CommentTool = (props) => {
                                                 </div>
                                                 {/* <div className="x4b6v7d x1ojsi0c x10e4vud xm040h">
                                                     <ul
-                                                        className="x6s0dn4 xpvyfi4 x78zum5 xc9qbxq xw3qccf xp7jhwk"
+                                                        className="x6s0dn4 xpvyfi4 flex xc9qbxq xw3qccf xp7jhwk"
                                                         data-id="unfocused-state-actions-list"
                                                     >
-                                                        <li className="x1rg5ohu x1mnrxsn x1w0mnb"></li>
-                                                        <li className="x1rg5ohu x1mnrxsn x1w0mnb">
+                                                        <li className="x1rg5ohu x1mnrxsn mr-[6px]"></li>
+                                                        <li className="x1rg5ohu x1mnrxsn mr-[6px]">
                                                             <span className="x4k7w5x x1h91t0o x1h9r5lt x1jfb8zj xv2umb2 x1beo9mf xaigb6o x12ejxvf x3igimt xarpa2k xedcshv x1lytzrv x1t2pt76 x7ja8zs x1qrby5j">
                                                                 <div
                                                                     aria-label="Insert an emoji"
-                                                                    className="x1i10hfl x1qjc9v5 xjqpnuy xa49m3k xqeqjp1 x2hbi6w x9f619 x1ypdohk xdl72j9 x2lah0s xe8uvvx x2lwn1j xeuugli x16tdsg8 x1hl2dhg xggy1nq x1ja2u2z x1t137rt x1o1ewxj x3x9cwd x1e5q0jg x13rtm0m x1q0g3np x87ps6o x1lku1pv x1a2a7pz xjyslct xjbqb8w x13fuv20 xu3j5b3 x1q0q8m5 x26u7qi x972fbf xcfux6l x1qhh985 xm0m39n x3nfvp2 xdj266r x11i5rnm xat24cr x1mh8g0r xexx8yu x4uap5 x18d9i69 xkhd6sd x1n2onr6 x3ajldb x194ut8o x1vzenxt xd7ygy7 xt298gk x1xhcax0 x1s928wv x10pfhc2 x1j6awrg x1v53gu8 x1tfg27r xitxdhh"
+                                                                    className="x1i10hfl x1qjc9v5 xjqpnuy xa49m3k xqeqjp1 x2hbi6w box-border x1ypdohk xdl72j9 flex-shrink-0 xe8uvvx min-h-[0] xeuugli x16tdsg8 x1hl2dhg xggy1nq z-0 x1t137rt x1o1ewxj x3x9cwd x1e5q0jg x13rtm0m flex-row x87ps6o x1lku1pv outline-none xjyslct xjbqb8w x13fuv20 xu3j5b3 x1q0q8m5 x26u7qi x972fbf xcfux6l x1qhh985 xm0m39n x3nfvp2 xdj266r x11i5rnm xat24cr x1mh8g0r xexx8yu pr-0 x18d9i69 xkhd6sd relative x3ajldb x194ut8o x1vzenxt xd7ygy7 xt298gk x1xhcax0 x1s928wv x10pfhc2 x1j6awrg x1v53gu8 x1tfg27r xitxdhh"
                                                                     role="button"
                                                                     tabIndex="0"
                                                                 >
@@ -222,17 +222,17 @@ const CommentTool = (props) => {
                                                                         }}
                                                                     ></i>
                                                                     <div
-                                                                        className="x1ey2m1c xds687c xg01cxk x47corl x10l6tqk x17qophe x13vifvy x1ebt8du x19991ni x1dhq9h x14yjl9h xudhj91 x18nykt9 xww2gxu"
+                                                                        className="x1ey2m1c xds687c xg01cxk x47corl x10l6tqk x17qophe x13vifvy x1ebt8du x19991ni x1dhq9h rounded-tl-[50%] rounded-tr-[50%] rounded-br-[50%] rounded-bl-[50%]"
                                                                         data-visualcompletion="ignore"
                                                                     ></div>
                                                                 </div>
                                                             </span>
                                                         </li>
-                                                        <li className="x1rg5ohu x1mnrxsn x1w0mnb">
+                                                        <li className="x1rg5ohu x1mnrxsn mr-[6px]">
                                                             <span className="x4k7w5x x1h91t0o x1h9r5lt x1jfb8zj xv2umb2 x1beo9mf xaigb6o x12ejxvf x3igimt xarpa2k xedcshv x1lytzrv x1t2pt76 x7ja8zs x1qrby5j">
                                                                 <div
                                                                     aria-label="Attach a photo or video"
-                                                                    className="x1i10hfl x1qjc9v5 xjqpnuy xa49m3k xqeqjp1 x2hbi6w x9f619 x1ypdohk xdl72j9 x2lah0s xe8uvvx x2lwn1j xeuugli x16tdsg8 x1hl2dhg xggy1nq x1ja2u2z x1t137rt x1o1ewxj x3x9cwd x1e5q0jg x13rtm0m x1q0g3np x87ps6o x1lku1pv x1a2a7pz xjyslct xjbqb8w x13fuv20 xu3j5b3 x1q0q8m5 x26u7qi x972fbf xcfux6l x1qhh985 xm0m39n x3nfvp2 xdj266r x11i5rnm xat24cr x1mh8g0r xexx8yu x4uap5 x18d9i69 xkhd6sd x1n2onr6 x3ajldb x194ut8o x1vzenxt xd7ygy7 xt298gk x1xhcax0 x1s928wv x10pfhc2 x1j6awrg x1v53gu8 x1tfg27r xitxdhh"
+                                                                    className="x1i10hfl x1qjc9v5 xjqpnuy xa49m3k xqeqjp1 x2hbi6w box-border x1ypdohk xdl72j9 flex-shrink-0 xe8uvvx min-h-[0] xeuugli x16tdsg8 x1hl2dhg xggy1nq z-0 x1t137rt x1o1ewxj x3x9cwd x1e5q0jg x13rtm0m flex-row x87ps6o x1lku1pv outline-none xjyslct xjbqb8w x13fuv20 xu3j5b3 x1q0q8m5 x26u7qi x972fbf xcfux6l x1qhh985 xm0m39n x3nfvp2 xdj266r x11i5rnm xat24cr x1mh8g0r xexx8yu pr-0 x18d9i69 xkhd6sd relative x3ajldb x194ut8o x1vzenxt xd7ygy7 xt298gk x1xhcax0 x1s928wv x10pfhc2 x1j6awrg x1v53gu8 x1tfg27r xitxdhh"
                                                                     role="button"
                                                                     tabIndex="0"
                                                                 >
@@ -256,7 +256,7 @@ const CommentTool = (props) => {
                                                                         }}
                                                                     ></i>
                                                                     <div
-                                                                        className="x1ey2m1c xds687c xg01cxk x47corl x10l6tqk x17qophe x13vifvy x1ebt8du x19991ni x1dhq9h x14yjl9h xudhj91 x18nykt9 xww2gxu"
+                                                                        className="x1ey2m1c xds687c xg01cxk x47corl x10l6tqk x17qophe x13vifvy x1ebt8du x19991ni x1dhq9h rounded-tl-[50%] rounded-tr-[50%] rounded-br-[50%] rounded-bl-[50%]"
                                                                         data-visualcompletion="ignore"
                                                                     ></div>
                                                                 </div>
@@ -267,11 +267,11 @@ const CommentTool = (props) => {
                                                                 type="file"
                                                             />
                                                         </li>
-                                                        <li className="x1rg5ohu x1mnrxsn x1w0mnb">
+                                                        <li className="x1rg5ohu x1mnrxsn mr-[6px]">
                                                             <span className="x4k7w5x x1h91t0o x1h9r5lt x1jfb8zj xv2umb2 x1beo9mf xaigb6o x12ejxvf x3igimt xarpa2k xedcshv x1lytzrv x1t2pt76 x7ja8zs x1qrby5j">
                                                                 <div
                                                                     aria-label="Comment with a GIF"
-                                                                    className="x1i10hfl x1qjc9v5 xjqpnuy xa49m3k xqeqjp1 x2hbi6w x9f619 x1ypdohk xdl72j9 x2lah0s xe8uvvx x2lwn1j xeuugli x16tdsg8 x1hl2dhg xggy1nq x1ja2u2z x1t137rt x1o1ewxj x3x9cwd x1e5q0jg x13rtm0m x1q0g3np x87ps6o x1lku1pv x1a2a7pz xjyslct xjbqb8w x13fuv20 xu3j5b3 x1q0q8m5 x26u7qi x972fbf xcfux6l x1qhh985 xm0m39n x3nfvp2 xdj266r x11i5rnm xat24cr x1mh8g0r xexx8yu x4uap5 x18d9i69 xkhd6sd x1n2onr6 x3ajldb x194ut8o x1vzenxt xd7ygy7 xt298gk x1xhcax0 x1s928wv x10pfhc2 x1j6awrg x1v53gu8 x1tfg27r xitxdhh"
+                                                                    className="x1i10hfl x1qjc9v5 xjqpnuy xa49m3k xqeqjp1 x2hbi6w box-border x1ypdohk xdl72j9 flex-shrink-0 xe8uvvx min-h-[0] xeuugli x16tdsg8 x1hl2dhg xggy1nq z-0 x1t137rt x1o1ewxj x3x9cwd x1e5q0jg x13rtm0m flex-row x87ps6o x1lku1pv outline-none xjyslct xjbqb8w x13fuv20 xu3j5b3 x1q0q8m5 x26u7qi x972fbf xcfux6l x1qhh985 xm0m39n x3nfvp2 xdj266r x11i5rnm xat24cr x1mh8g0r xexx8yu pr-0 x18d9i69 xkhd6sd relative x3ajldb x194ut8o x1vzenxt xd7ygy7 xt298gk x1xhcax0 x1s928wv x10pfhc2 x1j6awrg x1v53gu8 x1tfg27r xitxdhh"
                                                                     role="button"
                                                                     tabIndex="0"
                                                                 >
@@ -295,17 +295,17 @@ const CommentTool = (props) => {
                                                                         }}
                                                                     ></i>
                                                                     <div
-                                                                        className="x1ey2m1c xds687c xg01cxk x47corl x10l6tqk x17qophe x13vifvy x1ebt8du x19991ni x1dhq9h x14yjl9h xudhj91 x18nykt9 xww2gxu"
+                                                                        className="x1ey2m1c xds687c xg01cxk x47corl x10l6tqk x17qophe x13vifvy x1ebt8du x19991ni x1dhq9h rounded-tl-[50%] rounded-tr-[50%] rounded-br-[50%] rounded-bl-[50%]"
                                                                         data-visualcompletion="ignore"
                                                                     ></div>
                                                                 </div>
                                                             </span>
                                                         </li>
-                                                        <li className="x1rg5ohu x1mnrxsn x1w0mnb">
+                                                        <li className="x1rg5ohu x1mnrxsn mr-[6px]">
                                                             <span className="x4k7w5x x1h91t0o x1h9r5lt x1jfb8zj xv2umb2 x1beo9mf xaigb6o x12ejxvf x3igimt xarpa2k xedcshv x1lytzrv x1t2pt76 x7ja8zs x1qrby5j">
                                                                 <div
                                                                     aria-label="Comment with a Sticker"
-                                                                    className="x1i10hfl x1qjc9v5 xjqpnuy xa49m3k xqeqjp1 x2hbi6w x9f619 x1ypdohk xdl72j9 x2lah0s xe8uvvx x2lwn1j xeuugli x16tdsg8 x1hl2dhg xggy1nq x1ja2u2z x1t137rt x1o1ewxj x3x9cwd x1e5q0jg x13rtm0m x1q0g3np x87ps6o x1lku1pv x1a2a7pz xjyslct xjbqb8w x13fuv20 xu3j5b3 x1q0q8m5 x26u7qi x972fbf xcfux6l x1qhh985 xm0m39n x3nfvp2 xdj266r x11i5rnm xat24cr x1mh8g0r xexx8yu x4uap5 x18d9i69 xkhd6sd x1n2onr6 x3ajldb x194ut8o x1vzenxt xd7ygy7 xt298gk x1xhcax0 x1s928wv x10pfhc2 x1j6awrg x1v53gu8 x1tfg27r xitxdhh"
+                                                                    className="x1i10hfl x1qjc9v5 xjqpnuy xa49m3k xqeqjp1 x2hbi6w box-border x1ypdohk xdl72j9 flex-shrink-0 xe8uvvx min-h-[0] xeuugli x16tdsg8 x1hl2dhg xggy1nq z-0 x1t137rt x1o1ewxj x3x9cwd x1e5q0jg x13rtm0m flex-row x87ps6o x1lku1pv outline-none xjyslct xjbqb8w x13fuv20 xu3j5b3 x1q0q8m5 x26u7qi x972fbf xcfux6l x1qhh985 xm0m39n x3nfvp2 xdj266r x11i5rnm xat24cr x1mh8g0r xexx8yu pr-0 x18d9i69 xkhd6sd relative x3ajldb x194ut8o x1vzenxt xd7ygy7 xt298gk x1xhcax0 x1s928wv x10pfhc2 x1j6awrg x1v53gu8 x1tfg27r xitxdhh"
                                                                     role="button"
                                                                     tabIndex="0"
                                                                 >
@@ -329,7 +329,7 @@ const CommentTool = (props) => {
                                                                         }}
                                                                     ></i>
                                                                     <div
-                                                                        className="x1ey2m1c xds687c xg01cxk x47corl x10l6tqk x17qophe x13vifvy x1ebt8du x19991ni x1dhq9h x14yjl9h xudhj91 x18nykt9 xww2gxu"
+                                                                        className="x1ey2m1c xds687c xg01cxk x47corl x10l6tqk x17qophe x13vifvy x1ebt8du x19991ni x1dhq9h rounded-tl-[50%] rounded-tr-[50%] rounded-br-[50%] rounded-bl-[50%]"
                                                                         data-visualcompletion="ignore"
                                                                     ></div>
                                                                 </div>
@@ -340,15 +340,15 @@ const CommentTool = (props) => {
                                             </div>
 
                                             <div className="x10b6aqq x4b6v7d x1ojsi0c x1u6ievf x67ttcy">
-                                                <div className="x9f619 x1n2onr6 x1ja2u2z x78zum5 x2lah0s x1qughib x6s0dn4 x1a02dak x1q0g3np x1pi30zi x1swvt13 xykv574 xbmpl8g x4cne27 xifccgj">
-                                                    <div className="x9f619 x1n2onr6 x1ja2u2z x78zum5 xdt5ytf x2lah0s x193iq5w xeuugli xsyo7zv x16hj40l x10b6aqq x1yrsyyn">
+                                                <div className="box-border relative z-0 flex flex-shrink-0 x1qughib x6s0dn4 x1a02dak flex-row pr-[16px] pl-[16px] xykv574 xbmpl8g x4cne27 xifccgj">
+                                                    <div className="box-border relative z-0 flex flex-col flex-shrink-0 max-w-[100%] xeuugli xsyo7zv x16hj40l x10b6aqq x1yrsyyn">
                                                         <div id="focused-state-actions-list">
                                                             <ul
-                                                                className="x6s0dn4 xpvyfi4 x78zum5 xc9qbxq xw3qccf xp7jhwk"
+                                                                className="x6s0dn4 xpvyfi4 flex xc9qbxq xw3qccf xp7jhwk"
                                                                 data-id="unfocused-state-actions-list"
                                                             >
                                                                 {/* <li
-                                                                    className=" hover:bg-[#676668] rounded-full cursor-pointer p-[8px] x1rg5ohu x1mnrxsn x1w0mnb"
+                                                                    className=" hover:bg-[#676668] rounded-full cursor-pointer p-[8px] x1rg5ohu x1mnrxsn mr-[6px]"
                                                                     onClick={() =>
                                                                         handleSelectImage()
                                                                     }
@@ -356,7 +356,7 @@ const CommentTool = (props) => {
                                                                     <FaCamera size="20px" />
                                                                 </li> */}
                                                                 <li
-                                                                    className="relative hover:bg-[#676668] rounded-full cursor-pointer p-[8px] x1rg5ohu x1mnrxsn x1w0mnb"
+                                                                    className="relative hover:bg-[#676668] rounded-full cursor-pointer p-[8px] x1rg5ohu x1mnrxsn mr-[6px]"
                                                                     onClick={() =>
                                                                         setIsEmojiPickerVisible(
                                                                             !isEmojiPickerVisible
@@ -370,7 +370,7 @@ const CommentTool = (props) => {
                                                     </div>
                                                     {props.text?.length > 0 ? (
                                                         <div
-                                                            className="x9f619 x1n2onr6 x1ja2u2z x78zum5 xdt5ytf x2lah0s x193iq5w xeuugli xsyo7zv x16hj40l x10b6aqq x1yrsyyn 
+                                                            className="box-border relative z-0 flex flex-col flex-shrink-0 max-w-[100%] xeuugli xsyo7zv x16hj40l x10b6aqq x1yrsyyn 
                                                             rounded-full hover:bg-[#676668] cursor-pointer"
                                                             onClick={(e) =>
                                                                 handleClickSend(
@@ -384,7 +384,7 @@ const CommentTool = (props) => {
                                                             />
                                                         </div>
                                                     ) : (
-                                                        <div className="x9f619 x1n2onr6 x1ja2u2z x78zum5 xdt5ytf x2lah0s x193iq5w xeuugli xsyo7zv x16hj40l x10b6aqq x1yrsyyn rounded-full cursor-not-allowed text-[#707070]">
+                                                        <div className="box-border relative z-0 flex flex-col flex-shrink-0 max-w-[100%] xeuugli xsyo7zv x16hj40l x10b6aqq x1yrsyyn rounded-full cursor-not-allowed text-[#707070]">
                                                             <PiPaperPlaneRightFill
                                                                 className=""
                                                                 size="30px"
