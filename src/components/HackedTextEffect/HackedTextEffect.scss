@@ -1,0 +1,8 @@
+.hacked-text-effect {
+    width: 100%;
+    font-family: "Space Mono", monospace;
+    font-size: 20px;
+    color: var(--general-text-color);
+    padding: 0rem clamp(1rem, 2vw, 3rem);
+    border-radius: clamp(0.4rem, 0.75vw, 1rem);
+}

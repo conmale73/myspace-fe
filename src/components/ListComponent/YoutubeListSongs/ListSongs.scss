@@ -1,0 +1,26 @@
+.inlineList {
+    display: grid;
+    margin: 0 0 0 5px;
+
+    @media screen and (min-width: 1920px) {
+        grid-template-columns: repeat(8, 12.5%);
+    }
+    @media screen and (min-width: 1500px) and (max-width: 1919px) {
+        grid-template-columns: repeat(8, 12.5%);
+    }
+    @media screen and (min-width: 1500px) and (max-width: 1749px) {
+        grid-template-columns: repeat(7, 14.28%);
+    }
+    @media screen and (min-width: 1300px) and (max-width: 1499px) {
+        grid-template-columns: repeat(5, 20%);
+    }
+    @media screen and (min-width: 1024px) and (max-width: 1299px) {
+        grid-template-columns: repeat(4, 25%);
+    }
+    @media screen and (min-width: 768px) and (max-width: 1023px) {
+        grid-template-columns: repeat(3, 33.3%);
+    }
+    @media screen and (max-width: 767px) {
+        grid-template-columns: repeat(2, 50%);
+    }
+}

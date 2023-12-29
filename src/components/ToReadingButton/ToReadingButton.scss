@@ -1,0 +1,18 @@
+.toReadingButton {
+    display: flex;
+    padding: 5px 10px 5px 10px;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    background-color: #3b445b;
+    color: #f0f0f0;
+    border-radius: 10px;
+    margin: 10px 0 10px 10px;
+    .icon {
+        padding: 0 10px 0 10px;
+    }
+}
+.toReadingButton:hover {
+    background-color: #5a6277;
+    cursor: pointer;
+}

@@ -1,0 +1,110 @@
+.mediumSong {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    border-radius: 10px;
+    width: 180px;
+    height: 200px;
+    max-height: 200px;
+    transition: all 0.3s ease;
+    &:hover {
+        transform: scale(1.05);
+        box-shadow: 0 5px 15px #86868642;
+    }
+    &:hover .playButtonContainer {
+        opacity: 1;
+    }
+    &:hover img {
+        opacity: 0.7;
+    }
+    .songImageContainer {
+        position: relative;
+        width: 120px;
+        height: 120px;
+    }
+    .songImage {
+        position: relative;
+        width: 120px;
+        height: 120px;
+        object-fit: cover;
+    }
+    .playButtonContainer {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        opacity: 0;
+        transition: opacity 0.3s ease;
+    }
+    .playButton {
+        color: var(--general-icon-color);
+    }
+    .playButton:hover {
+        cursor: pointer;
+        color: var(--icon-hover);
+        transition: all 0.3s ease;
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+
+    .info {
+        width: 100%;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+
+        .songName {
+            width: 100%;
+            font-size: 1.4rem;
+            font-weight: 600;
+            color: var(--general-text-color);
+            padding: 0 0 0 10px;
+
+            --max-lines: 1;
+            display: -webkit-box;
+            -webkit-line-clamp: var(--max-lines);
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+        @keyframes slide-left {
+            from {
+                -webkit-transform: translateX(0);
+                transform: translateX(0);
+            }
+            to {
+                -webkit-transform: translateX(-300%);
+                transform: translateX(-300%);
+            }
+        }
+        .songName:hover {
+            display: flex;
+            flex-wrap: nowrap;
+            overflow: visible;
+            white-space: nowrap;
+            color: var(--text-hover);
+            text-decoration: underline;
+            animation: slide-left 20s linear infinite;
+        }
+        .artistList {
+            display: flex;
+            width: 100%;
+            overflow: hidden;
+            flex-flow: row wrap;
+            margin: 0 0 0 10px;
+            .artist {
+                font-size: 1.1rem;
+                font-weight: 500;
+                margin-right: 5px;
+                flex-wrap: wrap;
+                color: var(--small-text-color);
+                &:hover {
+                    text-decoration: underline;
+                    cursor: pointer;
+                    color: var(--text-hover);
+                }
+            }
+        }
+    }
+}

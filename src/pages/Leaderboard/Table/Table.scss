@@ -1,0 +1,73 @@
+/* Table.scss */
+
+.table {
+    border-collapse: collapse;
+    width: 100%;
+
+    .row {
+        display: flex;
+        height: 100px;
+        &:last-child {
+            border-bottom: none;
+        }
+
+        .cell {
+            justify-content: center;
+            align-items: center;
+
+            &:last-child {
+                border-right: none;
+                flex: 1; /* Take the remaining width of the parent */
+            }
+
+            &:first-child {
+                display: flex;
+                width: 100px; /* Fixed width for the first cell */
+                text-align: center;
+                font-family: "Irish Grover", cursive;
+                font-size: 30px;
+                font-weight: 300;
+                align-items: center;
+                justify-content: center;
+            }
+            &.yellow {
+                font-weight: 700;
+                font-size: 40px;
+                background: linear-gradient(
+                    180deg,
+                    #e8e261 51.56%,
+                    rgba(255, 255, 255, 0) 83.33%
+                );
+                background-clip: text;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+
+            &.silver {
+                font-weight: 700;
+                font-size: 40px;
+                background: linear-gradient(
+                    180deg,
+                    #fff 22.4%,
+                    rgba(255, 255, 255, 0) 100%
+                );
+                background-clip: text;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+
+            &.brown {
+                font-weight: 700;
+                font-size: 40px;
+                background: linear-gradient(
+                    180deg,
+                    #d98e49 29.17%,
+                    rgba(255, 255, 255, 0) 100%
+                );
+                background-clip: text;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+        }
+    }
+}

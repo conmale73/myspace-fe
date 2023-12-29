@@ -1,0 +1,45 @@
+.button {
+    margin: 0px 0px 0px 10px;
+    color: var(--general-icon-color);
+}
+
+.button :hover {
+    cursor: pointer;
+    color: var(--icon-hover);
+}
+.profileMenu {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .profileButton {
+        width: 90%;
+        height: 35px;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        border-radius: 5px;
+        transition: all 0.3s ease-in-out;
+        padding: 0px 10px 0px 10px;
+        &:hover {
+            background-color: rgba(255, 255, 255, 0.267);
+        }
+        .icon {
+            width: 30px;
+            height: 30px;
+            margin: 0 10px 0 0;
+        }
+        .text {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.5rem;
+            font-weight: bold;
+            flex: 1;
+        }
+    }
+}

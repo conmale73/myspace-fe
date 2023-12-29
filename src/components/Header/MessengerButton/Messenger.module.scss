@@ -1,0 +1,9 @@
+.button {
+    color: var(--general-icon-color);
+    position: relative;
+}
+
+.button :hover {
+    cursor: pointer;
+    color: var(--icon-hover);
+}

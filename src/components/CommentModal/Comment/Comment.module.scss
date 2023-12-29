@@ -1,0 +1,24 @@
+.commentContainer {
+    &:hover .optionButtonContainer {
+        opacity: 1;
+    }
+    .avatarContainer {
+    }
+    .midContainer {
+        .textContent {
+            -ms-word-break: break-all;
+            word-break: break-all;
+
+            /* Non standard for webkit */
+            word-break: break-word;
+
+            -webkit-hyphens: auto;
+            -moz-hyphens: auto;
+            -ms-hyphens: auto;
+            hyphens: auto;
+        }
+    }
+    .optionButtonContainer {
+        opacity: 0;
+    }
+}

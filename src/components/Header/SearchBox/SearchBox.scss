@@ -1,0 +1,98 @@
+.searchBox {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 30px;
+    margin: 0 20% 0 5%;
+    .box {
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+        display: flex;
+        .inputBox {
+            font-size: 16px;
+            padding: 0px 1px 0px 10px;
+            width: 100%;
+            height: 100%;
+            border-radius: 10px 0 0 10px;
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            background-color: rgba(255, 255, 255, 0);
+        }
+        .searchButton {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 70px;
+            height: 30px;
+            border-radius: 0 10px 10px 0;
+            background-color: var(--general-button-color);
+            border: none;
+            margin: 0 auto;
+            padding: 0;
+            .icon {
+                border-radius: 10px;
+                color: var(--general-icon-color);
+                border: none;
+                margin: 0;
+                padding: 0;
+            }
+            &:hover {
+                cursor: pointer;
+                transition-duration: 0.3s;
+                background-color: var(--general-button-hover);
+            }
+        }
+        .disableSearchButton {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 70px;
+            height: 30px;
+            border-radius: 0 10px 10px 0;
+            background-color: var(--general-disabled-button-color);
+            border: none;
+            margin: 0 auto;
+            padding: 0;
+            .icon {
+                border-radius: 10px;
+                color: var(--general-disabled-icon-color);
+                border: none;
+                margin: 0;
+                padding: 0;
+            }
+            &:hover {
+                cursor: not-allowed;
+                transition-duration: 0.3s;
+                background-color: var(--general-disabled-button-hover);
+            }
+        }
+    }
+    .searching {
+    }
+    .results {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        background-color: #000000b3;
+        padding: 10px 0 10px 0;
+        border-radius: 5px;
+        .result {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            height: 30px;
+            align-items: center;
+            margin: 10px 0 5px 0px;
+            padding: 0 0 0 10px;
+
+            .icon {
+                margin: 0 10px 0 0;
+            }
+            &:hover {
+                cursor: default;
+                transition-duration: 0.3s;
+                background-color: rgba(255, 255, 255, 0.3);
+            }
+        }
+    }
+}

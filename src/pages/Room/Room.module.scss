@@ -1,0 +1,148 @@
+.room {
+    width: 100%;
+    height: 100%;
+    .roomInfo {
+        display: grid;
+        grid-template-columns: var(--detail-header-thumbnails-size) 1fr;
+        grid-template-areas:
+            "image metadata"
+            "image actions";
+        grid-gap: 24px 48px;
+        width: var(--globalContentWidth);
+        margin: var(--divider-height) auto 0 auto;
+
+        .roomThumbnail {
+            grid-area: image;
+            border-radius: 4px;
+            overflow: hidden;
+
+            img {
+                width: var(--detail-header-thumbnails-size);
+                height: var(--detail-header-thumbnails-size);
+            }
+        }
+        .infoContainer {
+            grid-area: metadata;
+            align-self: end;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+
+            .roomName {
+                font-size: 38px;
+                font-weight: 700;
+                color: var(--general-text-color);
+
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+            }
+            .roomCreator {
+                margin: 5px 0 5px 0;
+                display: flex;
+                align-items: center;
+                gap: 5px;
+            }
+            .roomDescription {
+                display: flex;
+                flex-direction: column;
+                color: var(--small-text-color);
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+            }
+        }
+        .buttons {
+            grid-area: actions;
+            align-self: start;
+            display: flex;
+            gap: 10px;
+            .joinButton {
+                width: 150px;
+                height: 40px;
+                border-radius: 5px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                cursor: pointer;
+                border: 1px solid var(--general-button-color);
+                &:hover {
+                    background-color: var(--general-button-hover);
+                }
+                .joinIcon {
+                    width: 20px;
+                    height: 20px;
+                    margin: 0 10px 0 0;
+                }
+                .joinText {
+                    font-size: 15px;
+                    font-weight: 500;
+                    color: var(--general-text-color);
+                }
+            }
+            .shareButton {
+                width: 150px;
+                height: 40px;
+                border-radius: 5px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                cursor: pointer;
+                border: 1px solid var(--general-button-color);
+
+                &:hover {
+                    background-color: var(--general-button-hover);
+                }
+                .shareIcon {
+                    width: 20px;
+                    height: 20px;
+                    margin: 0 10px 0 0;
+                }
+                .shareText {
+                    font-size: 15px;
+                    font-weight: 500;
+                    color: var(--general-text-color);
+                }
+            }
+            .quitButton {
+                width: 150px;
+                height: 40px;
+                border-radius: 5px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                cursor: pointer;
+                border: 1px solid var(--general-button-danger-color);
+
+                &:hover {
+                    background-color: var(--general-button-danger-hover);
+                }
+                .quitIcon {
+                    width: 20px;
+                    height: 20px;
+                    margin: 0 10px 0 0;
+                    color: var(--icon-danger);
+                }
+                .quitText {
+                    font-size: 15px;
+                    font-weight: 500;
+                    color: var(--text-danger);
+                }
+            }
+        }
+    }
+    .roomContent {
+        margin-top: var(--divider-height);
+    }
+    .roomChat {
+        display: flex;
+        width: 100%;
+        height: 400px;
+        flex-direction: column;
+
+        .chatBox {
+            width: 100%;
+            height: 400px;
+        }
+    }
+}

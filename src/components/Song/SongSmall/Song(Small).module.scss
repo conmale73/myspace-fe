@@ -1,0 +1,96 @@
+/* Song(Small).module.scss */
+.smallSong {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 10px;
+    transition: background-color 0.3s;
+    border-radius: 5px;
+    &:hover {
+        background-color: var(--general-button-hover);
+    }
+
+    .songImageContainer {
+        width: 60px;
+        height: 60px;
+        position: relative; /* This is important to position the play button relative to the container */
+        .songImage {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+    }
+
+    &:hover .songImage {
+        opacity: 0.7;
+    }
+
+    .playButtonContainer {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%); /* Center the play button */
+        opacity: 0; /* Hide the play button by default */
+        transition: opacity 0.3s;
+    }
+
+    &:hover .playButtonContainer {
+        opacity: 1; /* Show the play button on hover */
+    }
+
+    .playButton {
+        color: var(--general-icon-color);
+    }
+    .playButton:hover {
+        cursor: pointer;
+        color: var(--icon-hover);
+    }
+
+    .playingSong {
+        background-color: var(--general-button-hover);
+    }
+    .info {
+        flex: 1;
+    }
+
+    .songName {
+        font-size: 13px;
+        font-weight: bold;
+        color: var(--general-text-color);
+        --max-lines: 2;
+        display: -webkit-box;
+        -webkit-line-clamp: var(--max-lines);
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+    .songName:hover {
+        cursor: pointer;
+        color: var(--text-hover);
+        text-decoration: underline;
+    }
+
+    .artistList {
+        display: flex;
+        width: 100%;
+        overflow: hidden;
+
+        .artist {
+            font-size: 12px;
+            font-weight: 500;
+            margin-right: 5px;
+            opacity: 0.8;
+            color: var(--small-text-color);
+            --max-lines: 1;
+            display: -webkit-box;
+            -webkit-line-clamp: var(--max-lines);
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            &:hover {
+                text-decoration: underline;
+                cursor: pointer;
+                color: var(--text-hover);
+            }
+        }
+    }
+}

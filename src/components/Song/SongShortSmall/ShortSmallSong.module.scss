@@ -1,0 +1,89 @@
+.shortSmallSong {
+    width: var(--quickPicksItemWidth);
+    height: var(--quickPicksItemHeight);
+    margin-bottom: var(--quickPicksItemMarginBottom);
+    margin-right: var(--quickPicksItemMarginRight);
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    &:hover {
+        background-color: var(--general-button-hover);
+    }
+    &:hover .playButton {
+        opacity: 1;
+    }
+    &:hover .imageContainer img {
+        opacity: 0.5;
+    }
+    .playButton {
+        position: absolute;
+        top: 50%;
+        left: 55%;
+        opacity: 0;
+        color: var(--general-icon-color);
+        cursor: pointer;
+        transform: translate(-50%, -50%);
+        transition: all 0.3s ease;
+        & :hover {
+            color: var(--icon-hover);
+        }
+    }
+    .imageContainer {
+        width: calc(var(--quickPicksItemHeight) - 10px);
+        height: calc(var(--quickPicksItemHeight) - 10px);
+        object-fit: contain;
+        display: flex;
+        position: relative;
+        margin: 0 0 0 10px;
+        img {
+            border-radius: 5px;
+        }
+    }
+    .infoContainer {
+        width: calc(var(--quickPicksItemWidth) - var(--quickPicksItemHeight));
+        height: var(--quickPicksItemHeight);
+        margin-left: 10px;
+        display: flex;
+        flex-direction: column;
+
+        .title {
+            font-size: 1.3rem;
+            font-weight: 700;
+            margin-bottom: 5px;
+            color: var(--general-text-color);
+            --max-lines: 1;
+            display: -webkit-box;
+            -webkit-line-clamp: var(--max-lines);
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+
+            &:hover {
+                text-decoration: underline;
+                cursor: pointer;
+                color: var(--text-hover);
+            }
+        }
+        .artistList {
+            display: flex;
+            width: 100%;
+            overflow: hidden;
+
+            .artist {
+                font-size: 1.2rem;
+                font-weight: 500;
+                margin-right: 5px;
+                color: var(--small-text-color);
+                --max-lines: 1;
+                display: -webkit-box;
+                -webkit-line-clamp: var(--max-lines);
+                -webkit-box-orient: vertical;
+                overflow: hidden;
+                &:hover {
+                    text-decoration: underline;
+                    cursor: pointer;
+                    color: var(--text-hover);
+                }
+            }
+        }
+    }
+}

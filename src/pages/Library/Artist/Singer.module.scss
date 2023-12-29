@@ -1,0 +1,25 @@
+.singer {
+    width: 100%;
+    .header {
+        display: flex;
+        .title {
+            font-size: 2rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+
+            width: 100%;
+            justify-content: space-between;
+        }
+        .seeMore {
+            display: flex;
+            font-size: 1.5rem;
+            font-weight: 400;
+            right: 10px;
+            align-items: center;
+        }
+        .seeMore:hover {
+            color: #1db954;
+            cursor: pointer;
+        }
+    }
+}

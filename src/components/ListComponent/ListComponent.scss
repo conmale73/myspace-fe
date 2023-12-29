@@ -1,0 +1,86 @@
+.listComponent {
+    .inlineList {
+        display: grid;
+        row-gap: 16px;
+        column-gap: 10px;
+        margin: 0 13px 0 0;
+
+        @media screen and (min-width: 1920px) {
+            grid-template-columns: 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5%;
+        }
+        @media screen and (min-width: 1500px) and (max-width: 1919px) {
+            grid-template-columns: 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5%;
+        }
+        @media screen and (min-width: 1500px) and (max-width: 1749px) {
+            grid-template-columns: 14.28% 14.28% 14.28% 14.28% 14.28% 14.28% 14.28%;
+        }
+        @media screen and (min-width: 1300px) and (max-width: 1499px) {
+            grid-template-columns: 20% 20% 20% 20% 20%;
+        }
+        @media screen and (min-width: 1024px) and (max-width: 1299px) {
+            grid-template-columns: 25% 25% 25% 25%;
+        }
+        @media screen and (min-width: 768px) and (max-width: 1023px) {
+            grid-template-columns: 33.3% 33.3% 33.3%;
+        }
+        @media screen and (max-width: 767px) {
+            grid-template-columns: 50% 50%;
+        }
+    }
+    .inlineListPlaylist {
+        display: grid;
+        row-gap: 16px;
+        column-gap: 10px;
+        margin: 0 13px 0 0;
+        @media screen and (min-width: 1920px) {
+            grid-template-columns: 16.7% 16.7% 16.7% 16.7% 16.7% 16.7%;
+        }
+        @media screen and (min-width: 1500px) and (max-width: 1919px) {
+            grid-template-columns: 16.7% 16.7% 16.7% 16.7% 16.7% 16.7%;
+        }
+        @media screen and (min-width: 1500px) and (max-width: 1749px) {
+            grid-template-columns: 20% 20% 20% 20% 20%;
+        }
+        @media screen and (min-width: 1300px) and (max-width: 1499px) {
+            grid-template-columns: 25% 25% 25% 25%;
+        }
+        @media screen and (min-width: 1024px) and (max-width: 1299px) {
+            grid-template-columns: 33.3% 33.3% 33.3%;
+        }
+        @media screen and (min-width: 768px) and (max-width: 1023px) {
+            grid-template-columns: 50% 50%;
+        }
+        @media screen and (max-width: 767px) {
+            grid-template-columns: 50% 50%;
+        }
+    }
+    .inlineListSinger {
+        display: grid;
+        row-gap: 16px;
+        column-gap: 10px;
+        margin: 0 13px 0 0;
+        @media screen and (min-width: 1920px) {
+            grid-template-columns: 16.7% 16.7% 16.7% 16.7% 16.7% 16.7%;
+        }
+        @media screen and (min-width: 1500px) and (max-width: 1919px) {
+            grid-template-columns: 16.7% 16.7% 16.7% 16.7% 16.7% 16.7%;
+        }
+        @media screen and (min-width: 1500px) and (max-width: 1749px) {
+            grid-template-columns: 20% 20% 20% 20% 20%;
+        }
+        @media screen and (min-width: 1300px) and (max-width: 1499px) {
+            grid-template-columns: 25% 25% 25% 25%;
+        }
+        @media screen and (min-width: 1024px) and (max-width: 1299px) {
+            grid-template-columns: 33.3% 33.3% 33.3%;
+        }
+        @media screen and (min-width: 768px) and (max-width: 1023px) {
+            grid-template-columns: 50% 50%;
+        }
+        @media screen and (max-width: 767px) {
+            grid-template-columns: 50% 50%;
+        }
+    }
+    .collumnList {
+    }
+}

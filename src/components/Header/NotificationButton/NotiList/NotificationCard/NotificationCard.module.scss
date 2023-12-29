@@ -1,0 +1,15 @@
+.notiCard {
+    &:hover .notiCardButton {
+        opacity: 1;
+    }
+    .notiCardButton {
+        opacity: 0;
+        background-color: var(--general-button-color);
+        cursor: pointer;
+        border-radius: 100%;
+
+        &:hover {
+            background-color: var(--general-button-hover);
+        }
+    }
+}

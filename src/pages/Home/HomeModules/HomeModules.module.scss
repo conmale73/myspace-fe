@@ -1,0 +1,45 @@
+.homeModules {
+    width: 100%;
+    &__title {
+        font-size: 3rem;
+        font-weight: 700;
+        margin: 20px 0 0 0;
+    }
+
+    .contents {
+        display: flex;
+        width: 100%;
+        height: fit-content;
+        flex-direction: column;
+        .quickPicks {
+            display: flex;
+            width: 100%;
+            height: 100%;
+            justify-content: center;
+            align-items: center;
+            .quickPicksItemsWrapper {
+                width: 100%;
+                height: 90%;
+                display: flex;
+
+                .quickPicksItems {
+                    display: flex;
+                    flex-flow: column wrap;
+                    height: calc(
+                        var(--quickPicksItemPerCollumn) *
+                            var(--quickPicksItemHeight) +
+                            var(--quickPicksItemMarginBottom) *
+                            (var(--quickPicksItemPerCollumn))
+                    );
+                }
+            }
+        }
+        .content {
+            width: 100%;
+            height: fit-content;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}

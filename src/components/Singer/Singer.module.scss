@@ -1,0 +1,61 @@
+.singer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 200px;
+    height: 210px;
+    transition: all 0.3s ease;
+    &:hover {
+        transform: scale(1.05);
+        box-shadow: 0 5px 15px rgba(255, 255, 255, 0.26);
+    }
+    .singerImage {
+        width: 150px;
+        height: 150px;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    .info {
+        margin-left: 10px;
+        width: 100%;
+        overflow: hidden;
+        display: inline;
+        .singerName {
+            width: 100%;
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: #fff;
+
+            --max-lines: 1;
+            display: -webkit-box;
+            -webkit-line-clamp: var(--max-lines);
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+        @keyframes slide-left {
+            from {
+                -webkit-transform: translateX(0);
+                transform: translateX(0);
+            }
+            to {
+                -webkit-transform: translateX(-300%);
+                transform: translateX(-300%);
+            }
+        }
+        .singerName:hover {
+            display: flex;
+            flex-wrap: nowrap;
+            overflow: visible;
+            white-space: nowrap;
+            color: #1db954;
+            text-decoration: underline;
+            animation: slide-left 20s linear infinite;
+        }
+    }
+}

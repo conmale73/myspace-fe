@@ -1,0 +1,8 @@
+.notiCardButton {
+    background-color: var(--general-button-color);
+    cursor: pointer;
+
+    &:hover {
+        background-color: var(--general-button-hover);
+    }
+}

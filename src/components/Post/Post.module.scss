@@ -1,0 +1,390 @@
+.post {
+    width: 100%;
+    background-color: var(--level-1);
+    border-radius: 10px;
+    height: fit-content;
+    padding: 20px;
+    overflow: hidden;
+    position: relative;
+
+    .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+
+        .content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 10px;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: var(--general-text-color);
+            font-size: 20px;
+            font-weight: 600;
+        }
+    }
+    .infoContainer {
+        display: flex;
+        width: 100%;
+        height: 60px;
+        align-items: center;
+
+        .groupPostAvatar {
+            width: 70px;
+            height: 50px;
+            position: relative;
+
+            .groupThumbnail {
+                width: 50px;
+                height: 50px;
+                border-radius: 10px;
+                position: absolute;
+                top: 0;
+                left: 0;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 10px;
+                    object-fit: cover;
+                }
+
+                &:hover {
+                    opacity: 0.8;
+                }
+            }
+
+            .avatar {
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+                position: absolute;
+                bottom: 0;
+                right: 10px;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 50%;
+                    object-fit: cover;
+                }
+            }
+        }
+        .avatar {
+            width: 50px;
+            height: 50px;
+
+            img {
+                width: 100%;
+                height: 100%;
+                border-radius: 50%;
+            }
+        }
+        .groupPostInfo {
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+            height: 50px;
+
+            .groupName {
+                width: fit-content;
+                font-size: 15px;
+                font-weight: 600;
+                color: var(--general-text-color);
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+            .bottomInfo {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                .name {
+                    width: fit-content;
+                    font-size: 12px;
+                    font-weight: 500;
+                    color: var(--small-text-color);
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+                .dot {
+                    width: 5px;
+                    height: 5px;
+                    border-radius: 50%;
+                    background-color: var(--small-text-color);
+                }
+                .createAt {
+                    display: flex;
+                    font-size: 12px;
+                    font-weight: 400;
+                    color: var(--small-text-color);
+
+                    span {
+                        margin-left: 10px;
+                    }
+                }
+            }
+        }
+        .info {
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+            height: 50px;
+
+            .name {
+                width: fit-content;
+                font-size: 15px;
+                font-weight: 600;
+                color: var(--general-text-color);
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+            .createAt {
+                display: flex;
+                font-size: 12px;
+                font-weight: 400;
+                color: var(--small-text-color);
+
+                span {
+                    margin-left: 10px;
+                }
+            }
+        }
+        .optionButtons {
+            display: flex;
+            gap: 10px;
+            .detailButton {
+                width: 80px;
+                height: 40px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: var(--level-2);
+                border-radius: 10px;
+                cursor: pointer;
+                &:hover {
+                    background-color: var(--general-button-hover);
+                }
+                .icon {
+                    width: 20px;
+                    height: 20px;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                }
+            }
+            .optionButton {
+                width: 40px;
+                height: 40px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: var(--level-2);
+                border-radius: 10px;
+                cursor: pointer;
+                &:hover {
+                    background-color: var(--general-button-hover);
+                }
+                .icon {
+                    width: 20px;
+                    height: 20px;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                }
+            }
+        }
+    }
+    .content {
+        width: 100%;
+        height: fit-content;
+        margin-bottom: 20px;
+        .text {
+            margin-top: 10px;
+            margin-bottom: 10px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+            font-size: 15px;
+            font-weight: 400;
+            color: var(--general-text-color);
+
+            .readMore {
+                display: inline;
+                margin-left: 20px;
+                font-size: 15px;
+                font-weight: 600;
+                color: var(--small-text-color);
+                cursor: pointer;
+            }
+
+            .readMore:hover {
+                text-decoration: underline;
+            }
+        }
+        .files {
+            height: 100%;
+            display: flex;
+            justify-content: space-around;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+            img {
+                width: 100%;
+                height: 100%;
+                max-height: 700px;
+                background-repeat: no-repeat;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                object-fit: scale-down;
+            }
+            .audios {
+                display: flex;
+                justify-content: space-around;
+                flex-wrap: wrap;
+            }
+        }
+    }
+    .actions {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        border-top: 1px solid var(--level-2);
+        padding: 10px 0 0 0;
+        .liked {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            width: 40%;
+            border-radius: 10px;
+            height: 40px;
+            &:hover {
+                background-color: var(--general-button-hover);
+            }
+            .icon {
+                width: 20px;
+                height: 20px;
+                margin-right: 5px;
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+            .text {
+                font-size: 15px;
+                font-weight: 700;
+                color: var(--small-text-color);
+            }
+        }
+        .like {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            width: 40%;
+            border-radius: 10px;
+            height: 40px;
+            &:hover {
+                background-color: var(--general-button-hover);
+            }
+            .icon {
+                width: 20px;
+                height: 20px;
+                margin-right: 5px;
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+            .text {
+                font-size: 15px;
+                font-weight: 400;
+                color: var(--small-text-color);
+            }
+        }
+        .comment {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            width: 40%;
+            border-radius: 10px;
+            height: 40px;
+            &:hover {
+                background-color: var(--general-button-hover);
+            }
+            .icon {
+                width: 20px;
+                height: 20px;
+                margin-right: 5px;
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+            .text {
+                font-size: 15px;
+                font-weight: 400;
+                color: var(--small-text-color);
+            }
+        }
+        .share {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            width: 30%;
+            border-radius: 10px;
+            height: 40px;
+            &:hover {
+                background-color: var(--general-button-hover);
+            }
+            .icon {
+                width: 20px;
+                height: 20px;
+                margin-right: 5px;
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+            .text {
+                font-size: 15px;
+                font-weight: 400;
+                color: var(--small-text-color);
+            }
+        }
+    }
+
+    .reactions {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        font-size: 15px;
+        font-weight: 400;
+        color: var(--small-text-color);
+        margin: 0 0 0 10px;
+        height: 30px;
+        position: relative;
+    }
+}

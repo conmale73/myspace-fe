@@ -1,0 +1,97 @@
+.layout {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    min-height: 100vh; /* Make sure the layout fills the entire viewport */
+}
+
+.top {
+    flex: 1;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow-y: auto; /* Enable scrolling within the middle content area */
+
+    .headerAndContent {
+        position: absolute;
+        left: 300px;
+        display: flex;
+        flex-direction: column;
+        width: var(--globalContentWidth);
+        height: fit-content;
+        .header {
+            width: 60%;
+        }
+    }
+}
+
+.left {
+    width: 300px; /* Adjust the width of the left sidebar */
+    height: calc(100% - var(--globalFooterHeight));
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+}
+
+.content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    z-index: 0;
+    margin: 70px 20px var(--globalFooterHeight) 40px;
+    height: fit-content;
+}
+
+.left,
+.header,
+.footer {
+    z-index: 1; /* Ensure these elements are above the middle content */
+}
+
+.bottom {
+    position: fixed;
+    width: 100%;
+    height: var(--globalFooterHeight);
+    bottom: 0;
+    z-index: 0;
+    transition: 0.5s ease-in-out;
+
+    &.hide {
+        transform: translateY(var(--globalFooterHeight));
+        transition: transform 0.5s ease-in-out;
+    }
+    .toggleButton {
+        position: absolute;
+        top: -28px;
+        right: 20px;
+        width: 30px;
+        height: 30px;
+        border-radius: 5px;
+        background-color: var(--level-1);
+        border-top: 1px solid var(--general-button-color);
+        border-right: 1px solid var(--general-button-color);
+
+        border-left: 1px solid var(--general-button-color);
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 2rem;
+        &:hover {
+            cursor: pointer;
+            background-color: var(--general-button-hover);
+        }
+    }
+}
+
+.left,
+.right {
+    /* Add any additional styles for the left and right sidebars as needed */
+}

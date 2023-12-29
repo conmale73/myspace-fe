@@ -1,0 +1,181 @@
+.leftSidebar {
+    position: fixed;
+    width: 300px;
+
+    padding: 0 0 10px 10px;
+    height: 100%;
+    z-index: 2;
+    transition: 0.5s ease-in-out;
+    overflow: hidden;
+    &.hide {
+        transform: translateX(-250px);
+        transition: transform 0.5s ease-in-out;
+    }
+
+    .logo {
+        height: 100px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+            width: 100px;
+            height: 100px;
+            object-fit: contain;
+            cursor: pointer;
+        }
+    }
+
+    .info {
+        display: flex;
+        flex-direction: column;
+        height: fit-content;
+        justify-content: center;
+        align-items: center;
+        .avatar {
+            display: block;
+            justify-content: center;
+            align-items: center;
+            width: 110px;
+            height: 110px;
+            border-radius: 10px;
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+                border-radius: 10px;
+            }
+        }
+
+        .name {
+            font-weight: bold;
+            font-size: 20px;
+            text-align: center;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            word-wrap: break-word;
+
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+        .membership {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 5px 10px 5px 10px;
+            width: 180px;
+            background: #231e6e; /* fallback for old browsers */
+            background-image: -webkit-linear-gradient(
+                to right,
+                #231e6e 0%,
+                #6d607e 51%,
+                #496191 100%
+            ); /* Chrome 10-25, Safari 5.1-6 */
+            background-image: linear-gradient(
+                to right,
+                #231e6e 0%,
+                #6d607e 51%,
+                #496191 100%
+            ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+            color: #f0f0f0;
+            border-radius: 10px;
+            transition: 0.5s;
+            background-size: 200% auto;
+        }
+        .membership:hover {
+            cursor: pointer;
+            background-position: right center; /* change the direction of the change here */
+            color: #fff;
+            text-decoration: none;
+        }
+    }
+}
+.toggleButton {
+    position: absolute;
+    top: 50%;
+    right: -30px; /* Adjust the position as needed */
+    background-color: #6d607e;
+    color: #f0f0f0;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.toggleButton:hover {
+    background-color: #496191;
+    color: #fff;
+}
+
+.groupsLeftSidebar {
+    position: fixed;
+    width: 300px;
+    padding: 0 0 10px 10px;
+    height: 100%;
+    z-index: 2;
+    transition: 0.5s ease-in-out;
+    &.hide {
+        transform: translateX(-250px);
+        transition: transform 0.5s ease-in-out;
+    }
+
+    .logo {
+        height: 100px;
+        margin: 0 auto;
+        width: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+    .logo:hover {
+        cursor: pointer;
+    }
+
+    .title {
+        font-weight: bold;
+        font-size: 20px;
+        text-align: start;
+    }
+    .searchBar {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        z-index: 3;
+    }
+
+    .groupDetail {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 5px 10px 5px 10px;
+        width: 100%;
+        background: #231e6e; /* fallback for old browsers */
+        background-image: -webkit-linear-gradient(
+            to right,
+            #231e6e 0%,
+            #6d607e 51%,
+            #496191 100%
+        ); /* Chrome 10-25, Safari 5.1-6 */
+        background-image: linear-gradient(
+            to right,
+            #231e6e 0%,
+            #6d607e 51%,
+            #496191 100%
+        ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+        color: #f0f0f0;
+        border-radius: 10px;
+        transition: 0.5s;
+        background-size: 200% auto;
+        margin-bottom: 10px;
+    }
+}

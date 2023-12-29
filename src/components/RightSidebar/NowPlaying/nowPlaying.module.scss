@@ -1,0 +1,8 @@
+.nowPlaying {
+    margin-top: 20px;
+    overflow-y: scroll;
+    height: calc(100% - var(--globalFooterHeight) + 30px);
+    &::-webkit-scrollbar {
+        width: 0px;
+    }
+}

@@ -1,0 +1,87 @@
+.registerForm {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    .title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 20%;
+        font-size: 4rem;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+    .form {
+        width: 100%;
+        height: auto;
+
+        .input {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            height: auto;
+            margin-bottom: 1rem;
+
+            .label {
+                display: flex;
+                width: 100%;
+                height: 20%;
+                font-size: 1.5rem;
+                font-weight: bold;
+            }
+            .inputField {
+                display: flex;
+                width: 100%;
+                height: 80%;
+                border: 1px solid rgba(255, 255, 255, 0.5);
+                background-color: rgba(255, 255, 255, 0);
+                border-radius: 5px;
+                padding: 0.5rem;
+                font-size: 1.5rem;
+            }
+            .error {
+                display: flex;
+                justify-content: flex-start;
+                flex-direction: column;
+                width: 100%;
+                background-color: rgb(255, 255, 255);
+                border-radius: 5px;
+                margin: 5px 0;
+                .err {
+                    display: flex;
+                    justify-content: flex-start;
+                    font-size: 1.5rem;
+                    font-weight: 600;
+                    color: rgb(255, 0, 0);
+                    margin: 5px 0 5px 5px;
+                }
+            }
+        }
+    }
+    .button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 20%;
+        .signupButton {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 50%;
+            height: 30px;
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            background-color: rgba(255, 255, 255, 0);
+            border-radius: 5px;
+            font-size: 1.5rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+            &:hover {
+                background-color: rgba(255, 255, 255, 0.5);
+            }
+        }
+    }
+}

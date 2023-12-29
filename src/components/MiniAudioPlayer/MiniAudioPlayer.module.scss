@@ -1,0 +1,107 @@
+.miniAudioPlayer {
+    width: 300px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: var(--level-2);
+    border-radius: 10px;
+    gap: 10px;
+    margin: 0 20px 0 0;
+    padding: 0 10px 0 0;
+    .controllerButtons {
+        display: flex;
+        height: 50px;
+        justify-content: center;
+        align-items: center;
+        transition: all 0.3s ease;
+        .icon {
+            color: var(--general-icon-color);
+
+            &:hover {
+                color: var(--icon-hover);
+                cursor: pointer;
+            }
+        }
+        .volumeContainer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            transition: all 0.3s ease;
+
+            .volumeIcon {
+                color: var(--general-icon-color);
+                transition: all 0.3s ease;
+            }
+            .volumeIcon :hover {
+                cursor: pointer;
+                color: var(--icon-hover);
+            }
+            .volumeIcon:hover ~ .volumeControllerContainer {
+                display: flex;
+            }
+            .volumeControllerContainer {
+                display: none;
+                position: absolute;
+                left: 0px;
+                bottom: -12px;
+                justify-content: center;
+                align-items: center;
+                height: 100px;
+                width: 100px;
+                transition: all 0.3s ease;
+
+                &:hover {
+                    display: flex;
+                }
+                .volumeController {
+                    display: flex;
+                    bottom: 10px;
+                    justify-content: center;
+                    align-items: center;
+                    width: 100px;
+                    height: 20px;
+                    background-color: var(--level-1);
+                    padding: 5px;
+                    border: 1px solid var(--level-3);
+                    border-radius: 5px;
+
+                    .volumeBar {
+                        width: 100%;
+                        height: 2px;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+    .progressBarContainer {
+        display: flex;
+        width: 80%;
+        height: 40px;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+
+        .timerLeft {
+            font-size: 14px;
+            font-weight: 400;
+            color: var(--small-text-color);
+        }
+        .timerRight {
+            font-size: 14px;
+            font-weight: 400;
+            color: var(--small-text-color);
+        }
+        .timeline {
+            width: 80%;
+            height: 2px;
+            transition: all 0.3s ease;
+        }
+        .timeline:hover {
+            cursor: pointer;
+            height: 4px;
+        }
+    }
+}

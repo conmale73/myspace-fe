@@ -1,0 +1,29 @@
+.history {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    .topBar {
+        display: inline-block;
+        height: 32px;
+        gap: 26px;
+        .tabs {
+            display: inline-block;
+            width: 150px;
+            height: 27px;
+            align-items: flex-start;
+            gap: 10px;
+            margin: 0 0 0 20px;
+
+            .tab {
+                display: inline-block;
+                margin: 0 10px 0 0;
+                width: fit-content;
+                &:hover {
+                    cursor: pointer;
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}

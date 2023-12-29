@@ -1,0 +1,20 @@
+.rdp-dropdown {
+    background-color: var(--level-1);
+    color: var(--general-text-color);
+}
+.rdp-cell:hover {
+    color: var(--general-text-color);
+}
+
+.rdp-button:hover:not([disabled]):not(.rdp-day_selected) {
+    color: var(--general-text-color);
+    background-color: var(--level-2);
+}
+
+.rdp-day_selected,
+.rdp-day_selected:focus-visible,
+.rdp-day_selected:hover {
+    color: var(--general-text-color);
+    opacity: 1;
+    background-color: var(--general-button-hover);
+}
