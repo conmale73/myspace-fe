@@ -7,7 +7,7 @@ const FriendCard = ({ friend, user }) => {
     return (
         <div
             key={friend._id}
-            className="flex gap-[10px] w-[30%] h-[90px] p-[5px] hover:bg-[#404040] rounded-[10px] items-center"
+            className="flex gap-[10px] w-[30%] min-w-[250px] h-[90px] p-[5px] hover:bg-[#404040] rounded-[10px] items-center"
         >
             <div className="w-[60px] h-[60px] rounded-[10px] overflow-hidden">
                 <UserPreview
