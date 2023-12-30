@@ -38,7 +38,7 @@ const MutualFriends = ({ user_id }) => {
         return <p>{error.message}</p>;
     }
     return (
-        <div className="flex justify-around gap-[20px] flex-w w-full h-fit min-h-[90px] max-h-[800px] overflow-y-auto p-[5px]">
+        <div className="flex justify-around gap-[20px] flex-wrap w-full h-fit min-h-[90px] max-h-[800px] overflow-y-auto p-[5px]">
             {friends.map((friend, index) => (
                 <FriendCard key={index} friend={friend} user={user} />
             ))}

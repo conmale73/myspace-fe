@@ -87,7 +87,7 @@ const VoiceChatChannel = ({ index, _id, room_id, name, currentMembers }) => {
                             <ReactPlayer
                                 width="0px"
                                 height="0px"
-                                url="/sounds/ah!!.mp3"
+                                url="/sounds/enterVoiceChat.mp3"
                                 playing={playJoinSound}
                                 onEnded={() => setPlayJoinSound(false)}
                                 controls={false}
@@ -96,7 +96,7 @@ const VoiceChatChannel = ({ index, _id, room_id, name, currentMembers }) => {
                             <ReactPlayer
                                 width="0px"
                                 height="0px"
-                                url="/sounds/pussy-sound-effect_1.mp3"
+                                url="/sounds/bonk.mp3"
                                 playing={playLeaveSound}
                                 onEnded={() => setPlayLeaveSound(false)}
                                 controls={false}
