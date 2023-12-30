@@ -224,7 +224,7 @@ const PlaylistDetail = (props) => {
                                         />
                                         <p className={styles.playText}>Play</p>
                                     </div>
-                                    {playlist?.creator?._id === user._id && (
+                                    {/* {playlist?.creator?._id === user._id && (
                                         <div className={styles.editButton}>
                                             <MdEdit
                                                 className={styles.editIcon}
@@ -233,7 +233,7 @@ const PlaylistDetail = (props) => {
                                                 Edit Playlist
                                             </p>
                                         </div>
-                                    )}
+                                    )} */}
 
                                     {playlist?.creator?._id != user._id &&
                                         isSaved && (
@@ -269,9 +269,9 @@ const PlaylistDetail = (props) => {
                                                 </p>
                                             </div>
                                         )}
-                                    <div className="flex justify-center items-center rounded-full cursor-pointer hover:bg-[#606060]">
+                                    {/* <div className="flex justify-center items-center rounded-full cursor-pointer hover:bg-[#606060]">
                                         <SlOptionsVertical className="w-[40px] h-[30px] p-[5px] " />
-                                    </div>
+                                    </div> */}
                                 </div>
                             </div>
                             <div className={styles.listSong}>
