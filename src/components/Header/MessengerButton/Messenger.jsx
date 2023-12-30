@@ -50,11 +50,6 @@ const Messenger = ({ open, setOpen }) => {
         }
     }, []);
 
-    if (isLoading) return null;
-    if (error) {
-        console.log(error);
-        return <p>{error.message}</p>;
-    }
     return (
         <DropdownMenu.Root
             modal={false}

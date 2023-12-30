@@ -1,7 +1,7 @@
 import axios from "axios";
 
 //const apiProduction = 'https://json-kali.onrender.com';
-const apiProduction = "http://localhost:3000";
+const apiProduction = "https://myspace-be.onrender.com";
 const apiDev = "http://localhost:3000";
 const apiYoutube = "http://localhost:5000";
 const baseURL = process.env.NODE_ENV === "production" ? apiProduction : apiDev;
